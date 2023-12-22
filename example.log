@@ -1,0 +1,465 @@
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==>  Preparing: select * from user where username=? and password=?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==> Parameters: admin(String), admin(String)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - ==>  Preparing: insert into `order`(total,amount,status,paytype,name,phone,address,datetime,user_id) values(?,?,?,?,?,?,?,?,?)
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - ==> Parameters: 0.0(Float), 0(Integer), 4(Integer), 0(Integer), null, null, null, 2023-12-21T09:18:08.472845200(LocalDateTime), 1(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - ==>  Preparing: select last_insert_id()
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - ==> Parameters: 
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - ==>  Preparing: update `order` set status=? where id = ?
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - ==> Parameters: 1(Integer), 20(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==>  Preparing: delete from orderitem where order_id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==> Parameters: 20(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==>  Preparing: delete from order where id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==> Parameters: 20(Integer)
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==>  Preparing: delete from orderitem where order_id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==> Parameters: 20(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==>  Preparing: delete from order where id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==> Parameters: 20(Integer)
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==>  Preparing: delete from orderitem where order_id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==> Parameters: 15(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==>  Preparing: delete from order where id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==> Parameters: 15(Integer)
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38be305c]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main com.example.bookshop.mapper.TypeMapper.GetAllType - ==>  Preparing: select * from type
+DEBUG main com.example.bookshop.mapper.TypeMapper.GetAllType - ==> Parameters: 
+DEBUG main com.example.bookshop.mapper.TypeMapper.GetAllType - <==      Total: 16
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+DEBUG main com.example.bookshop.mapper.TypeMapper.selectTypeNameByID - ==>  Preparing: select * from type where id=?
+DEBUG main com.example.bookshop.mapper.TypeMapper.selectTypeNameByID - ==> Parameters: 10(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.selectTypeNameByID - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+INFO main com.example.bookshop.service.TypeServiceTest - Type(id=10, name=计算机与互联网, encodeName=%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91)
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==>  Preparing: select * from user where username=? and password=?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==> Parameters: admin(String), admin(String)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - ==>  Preparing: insert into `order`(total,amount,status,paytype,name,phone,address,datetime,user_id) values(?,?,?,?,?,?,?,?,?)
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - ==> Parameters: 0.0(Float), 0(Integer), 4(Integer), 0(Integer), null, null, null, 2023-12-21T09:43:38.999086500(LocalDateTime), 1(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.insertOrder - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - ==>  Preparing: select last_insert_id()
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - ==> Parameters: 
+DEBUG main com.example.bookshop.mapper.OrderMapper.getLastInsertId - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31e75d13]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAll - ==>  Preparing: select * from `order` where user_id=? order by datetime desc
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAll - ==> Parameters: 1(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAll - <==      Total: 5
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==>  Preparing: select i.id,i.price,i.amount,g.name from orderitem i,goods g where order_id=? and i.goods_id=g.id
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==> Parameters: 21(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - <==      Total: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==>  Preparing: select i.id,i.price,i.amount,g.name from orderitem i,goods g where order_id=? and i.goods_id=g.id
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==> Parameters: 12(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==>  Preparing: select i.id,i.price,i.amount,g.name from orderitem i,goods g where order_id=? and i.goods_id=g.id
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==> Parameters: 11(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==>  Preparing: select i.id,i.price,i.amount,g.name from orderitem i,goods g where order_id=? and i.goods_id=g.id
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==> Parameters: 3(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - <==      Total: 2
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==>  Preparing: select i.id,i.price,i.amount,g.name from orderitem i,goods g where order_id=? and i.goods_id=g.id
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - ==> Parameters: 2(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.selectAllItem - <==      Total: 4
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@a5b0b86]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - ==>  Preparing: update `order` set status=? where id = ?
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - ==> Parameters: 1(Integer), 20(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.updateStatus - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@269f4bad]
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==>  Preparing: delete from `orderitem` where order_id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - ==> Parameters: 21(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrderItem - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==>  Preparing: delete from `order` where id=?
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - ==> Parameters: 21(Integer)
+DEBUG main com.example.bookshop.mapper.OrderMapper.deleteOrder - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@339bf286]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - ==>  Preparing: select * from type where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - ==> Parameters: 1(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - ==>  Preparing: select * from type where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - ==> Parameters: 1(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.select - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+INFO main com.example.bookshop.service.TypeServiceTest - Type(id=1, name=小说, encodeName=%E5%B0%8F%E8%AF%B4)
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.TypeMapper.insert - ==>  Preparing: insert into type(name) values(?)
+DEBUG main com.example.bookshop.mapper.TypeMapper.insert - ==> Parameters: Web应用测试(String)
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+DEBUG main com.example.bookshop.mapper.TypeMapper.update - ==>  Preparing: update type set name=? where id =?
+DEBUG main com.example.bookshop.mapper.TypeMapper.update - ==> Parameters: Web(String), 17(Integer)
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@21aa6d6c]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==>  Preparing: delete from type where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==> Parameters: 17(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.TypeServiceTest - true
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==>  Preparing: delete from `type` where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==> Parameters: 17(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.TypeServiceTest - true
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==>  Preparing: delete from `type` where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==> Parameters: 17(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.TypeServiceTest - true
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - ==>  Preparing: select exists(select * from user where email = ?)
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - ==> Parameters: cas(String)
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - ==>  Preparing: insert into user(username,email,password,name,phone,address,isadmin,isvalidate) values(?,?,?,?,?,?,?,?)
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - ==> Parameters: xas(String), cas(String), ca(String), csc(String), ca(String), ca(String), false(Boolean), false(Boolean)
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Rolling back JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+INFO main com.example.bookshop.service.UserServiceTest - false
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==>  Preparing: delete from `type` where id = ?
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - ==> Parameters: 17(Integer)
+DEBUG main com.example.bookshop.mapper.TypeMapper.delete - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.TypeServiceTest - TypeServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - ==>  Preparing: select exists(select * from user where email = ?)
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - ==> Parameters: cas(String)
+DEBUG main com.example.bookshop.mapper.UserMapper.isEmailExist - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - ==>  Preparing: insert into user(username,email,password,name,phone,address,isadmin,isvalidate) values(?,?,?,?,?,?,?,?)
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - ==> Parameters: xas(String), cas(String), ca(String), csc(String), ca(String), ca(String), false(Boolean), false(Boolean)
+DEBUG main com.example.bookshop.mapper.UserMapper.addUser - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b968a76]
+INFO main com.example.bookshop.service.UserServiceTest - true
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==>  Preparing: select * from user where username=? and password=?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - ==> Parameters: admin(String), admin(String)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectByUsernamePassword - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2f9a01c1]
+INFO main com.example.bookshop.service.UserServiceTest - User [id=1, username=admin, email=admin@vilicode.com, password=admin, name=管理员, phone=13413145200, address=中华人民共和国, isadmin=true, isvalidate=false]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - ==>  Preparing: select * from user where id=?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - ==> Parameters: 8(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - <==      Total: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - ==>  Preparing: select * from user where id=?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - ==> Parameters: 1(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectById - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2611b9a3]
+INFO main com.example.bookshop.service.UserServiceTest - User [id=1, username=admin, email=admin@vilicode.com, password=admin, name=管理员, phone=13413145200, address=中华人民共和国, isadmin=true, isvalidate=false]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==>  Preparing: update user set name = ?,phone=?,address=? where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==> Parameters: null, 1(String), 1(String), 0(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==>  Preparing: update user set name = ?,phone=?,address=? where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==> Parameters: null, 1(String), testtesttesttest(String), 0(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - <==    Updates: 0
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==>  Preparing: update user set name = ?,phone=?,address=? where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==> Parameters: null, null, null, 9(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==>  Preparing: update user set name = ?,phone=?,address=? where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - ==> Parameters: null, 1(String), testtesttesttest(String), 9(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.updateUserAddress - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main com.example.bookshop.mapper.UserMapper.updatePwd - ==>  Preparing: update user set password = ? where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.updatePwd - ==> Parameters: 111(String), 9(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.updatePwd - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@40e10ff8]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserCount - ==>  Preparing: select count(*) from user
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserCount - ==> Parameters: 
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserCount - <==      Total: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+INFO main com.example.bookshop.service.UserService - 9
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserList - ==>  Preparing: select * from user limit ?,?
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserList - ==> Parameters: 0(Integer), 7(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.selectUserList - <==      Total: 7
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4b3c354a]
+INFO main com.example.bookshop.service.UserServiceTest - Page(pageNumber=1, pageSize=7, totalCount=9, totalPage=2, list=[User [id=1, username=admin, email=admin@vilicode.com, password=admin, name=管理员, phone=13413145200, address=中华人民共和国, isadmin=true, isvalidate=false], User [id=2, username=lin, email=lin@163.com, password=123456, name=林同学, phone=13413142724, address=广东省广州市天河区中山大道西293号广东技术师范大学, isadmin=false, isvalidate=false], User [id=3, username=root, email=root@163.com, password=123456, name=林先生, phone=13488886666, address=中国煲汤省生蚝市, isadmin=false, isvalidate=false], User [id=4, username=cdc, email=45236588259@qq.com, password=123456, name=陈先生, phone=15888881370, address=广东省广州市天河区中山大道西293号, isadmin=false, isvalidate=false], User [id=5, username=zhangsan, email=lin@gmail.com, password=123456, name=张三, phone=15878787878, address=中国煲汤省, isadmin=false, isvalidate=false], User [id=6, username=111, email=111, password=111, name=111, phone=111, address=111, isadmin=false, isvalidate=false], User [id=9, username=1, email=1, password=1, name=1, phone=1, address=testtesttesttest, isadmin=true, isvalidate=false]])
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest set up
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+DEBUG main org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main com.example.bookshop.mapper.UserMapper.delete - ==>  Preparing: delete from user where id = ?
+DEBUG main com.example.bookshop.mapper.UserMapper.delete - ==> Parameters: 13(Integer)
+DEBUG main com.example.bookshop.mapper.UserMapper.delete - <==    Updates: 1
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+DEBUG main org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@557a1e2d]
+INFO main com.example.bookshop.service.UserServiceTest - UserServiceTest tear down
